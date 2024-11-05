@@ -23,6 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip freeze > requirements.txt
           pip install -r requirements.txt  # Ensure you have a requirements.txt file
+          pip install requests
 
       - name: Run script
         run: python main.py  # Replace with your script name
