@@ -24,6 +24,8 @@ jobs:
           pip freeze > requirements.txt
           pip install -r requirements.txt  # Ensure you have a requirements.txt file
           pip install requests
+          pip install bs4
+          pip install pandas
 
       - name: Run script
         run: python main.py  # Replace with your script name
